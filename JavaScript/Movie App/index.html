@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h1 class="text-light me-2">Movie App</h1>
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="homeBtn" class="nav-link active text-light" aria-current="page" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="/info.html">
+                                Info
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id="popular" href="#">Popular</a></li>
+                                <li><a class="dropdown-item" id="topRated" href="#">Top Rated</a></li>
+                                <li><a class="dropdown-item" id="upcoming" href="#">Upcoming</a></li>
+                                <li><a class="dropdown-item" id="best" href="#">Best from 2010</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Genres
+                            </a>
+                            <ul id="dropdown" class="dropdown-menu">
+                                <li value="28"><a class="dropdown-item" href="#">Action</a></li>
+                                <li value="12"><a class="dropdown-item" href="#">Adventure</a></li>
+                                <li value="16"><a class="dropdown-item" href="#">Animation</a></li>
+                                <li value="35"><a class="dropdown-item" href="#">Comedy</a></li>
+                                <li value="80"><a class="dropdown-item" href="#">Crime</a></li>
+                                <li value="99"><a class="dropdown-item" href="#">Documentary</a></li>
+                                <li value="18"><a class="dropdown-item" href="#">Drama</a></li>
+                                <li value="14"><a class="dropdown-item" href="#">Fantasy</a></li>
+                                <li value="27"><a class="dropdown-item" href="#">Horror</a></li>
+                                <li value="9648"><a class="dropdown-item" href="#">Mystery</a></li>
+                                <li value="10749"><a class="dropdown-item" href="#">Romance</a></li>
+                                <li value="53"><a class="dropdown-item" href="#">Thriller</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form id="searchForm" class="d-flex" role="search">
+                        <input class="form-control me-2" type="text" placeholder="TV show title" name="inputData"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500//p1F51Lvj3sMopG948F5HsBbl43C.jpg" alt="Image">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="rate">9.8</span>
+            </div>
+            <div class="overview">
+                <h4>Overview</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+            </div>
+        </div>
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Filip Zlatojević</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="/info.html" class="nav-link px-2 text-muted">Info</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sorting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Top</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="appMovies.js"></script>
+</body>
+
+</html>

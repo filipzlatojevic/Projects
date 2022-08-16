@@ -1,0 +1,14 @@
+body {
+    background-color: #e9ecef;
+    color: #212529;
+}
+.pokemon {
+    display: inline-block;
+    text-align: center;
+}
+.pokemon img {
+    display: block;
+}
+h1 {
+    text-align: center;
+}
