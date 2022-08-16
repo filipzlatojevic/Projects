@@ -6,7 +6,10 @@ body {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     margin: 0;
     font-family: sans-serif;
+<<<<<<< HEAD
     letter-spacing: 1px;
+=======
+>>>>>>> e58f4b84d64ab6cdb9e727bf0feb6037a307d498
 }
 
 header {
@@ -90,6 +93,7 @@ footer {
 /* Info */
 p, h1, h2, h3 {
     color: white;
+<<<<<<< HEAD
 }
 
 #page-container {
@@ -105,4 +109,6 @@ p, h1, h2, h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
+=======
+>>>>>>> e58f4b84d64ab6cdb9e727bf0feb6037a307d498
 }
