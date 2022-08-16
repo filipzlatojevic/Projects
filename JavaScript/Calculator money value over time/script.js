@@ -16,13 +16,12 @@ function inflationCalculator() {
 
     let newElement = document.createElement('div');
     newElement.className = 'new-value';
-    newElement.innerText = `Današnjih ${money}€ vredi isto kao ${worth}€ za ${years} godina.`;
+    newElement.innerText = `Today's ${money}€ is worth as much as ${worth}€ for ${years} years.`;
 
     if (inflationRate && money && years) {
         document.querySelector('.container').appendChild(newElement);
     } else {
-        newElement.innerText = 'Unesite odgovarajuće parametre.';
+        newElement.innerText = 'Please, enter all parameters.';
         document.querySelector('.container').appendChild(newElement);
     }
-
 }

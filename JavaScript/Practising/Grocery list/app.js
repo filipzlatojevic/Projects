@@ -1,5 +1,3 @@
-//pravljenje soping liste
-
 const form = document.querySelector('form');
 const inputProd = document.querySelector('#product');
 const inputQty = document.querySelector('#qty');
@@ -14,4 +12,4 @@ form.addEventListener('submit', function (e) {
     list.append(newLi);
     inputProd.value = '';
     inputQty.value = '';
-})
+});
